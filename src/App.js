@@ -18,14 +18,17 @@ class App extends Component {
               </nav>
             </header>
             <div className="body-container">
-              <h1 className="body-title">Welcome to piṯḡāmā</h1>
-              <p className="body-intro">
-                piṯḡāmā: פִּתְגָמָא (Aramaic) - a word or phrase
-                <br/>
-                Borrowed from the Persian <i>patgam</i>, which is translated as that which has come to, that which has arrived.
-                <br/>
-                Pitgama will utilize the Sefaria.org API to explore ideas and connections in Jewish wisdom literature.
-              </p>
+              <div className="intro-box">
+                <h1 className="body-title">Welcome to piṯḡāmā</h1>
+                <p className="body-intro">
+                  piṯḡāmā: פִּתְגָמָא (Aramaic) - a word or phrase
+                  <br/>
+                  Borrowed from the Persian <i>patgam</i>, which is translated as that which has come to, that which has arrived.
+                  <br/>
+                  Pitgama will utilize the Sefaria.org API to explore ideas and connections in Jewish wisdom literature.
+                </p>
+                <button className="banner-button"><a href="#">Get Started</a></button>
+              </div>
             </div>
           </div>
         );
