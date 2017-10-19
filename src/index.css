@@ -3,3 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+@media screen and (max-width: 1120px) {
+  .intro-box {
+      border-bottom-left-radius: 80px;
+      border-bottom-right-radius:80px;
+  }
+}
