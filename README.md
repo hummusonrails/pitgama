@@ -26,7 +26,9 @@ Once you are ready to contribute, please submit a clearly documented pull reques
 We are people who love text, coding and data. Two of us are rabbis (perhaps "Rabbis on Rails" or "Reactive Rabbis"?) and one of us lives in Israel.
 
 [Ben Greenberg](http://www.bengreenberg.org)
+
 [Malki Davis](https://github.com/mxdavis/)
+
 [Yechiel Kalmenson](http://yechiel.me/)
 
 Please feel free to get in touch with any or all of us, we'd love to chat about the beauty of data, ancient texts or anything else.
