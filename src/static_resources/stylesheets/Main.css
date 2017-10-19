@@ -74,3 +74,12 @@ button.banner-button {
 button.banner-button a {
   text-decoration: none;
 }
+
+
+/* media queries */
+
+@media all and (min-width: 1119px) {
+  .intro-box {
+    max-width: 50%;
+  }
+}
