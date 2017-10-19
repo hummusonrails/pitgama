@@ -12,15 +12,17 @@ class App extends Component {
               <nav className="nav-container">
                 <ul>
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a id="align-right" href="#">About</a></li>
+                  <li><a id="align-right" href="#">Contact</a></li>
                 </ul>
               </nav>
             </header>
             <div className="body-container">
-              <h1 className="body-title">Welcome to pitgama</h1>
+              <h1 className="body-title">Welcome to piṯḡāmā</h1>
               <p className="body-intro">
-                piṯḡāmā: פִּתְגָמָא (Aramaic) - a word or phrase, borrowed from the Persian patgam, which is translated as that which has come to, that which has arrived.
+                piṯḡāmā: פִּתְגָמָא (Aramaic) - a word or phrase
+                <br/>
+                Borrowed from the Persian <i>patgam</i>, which is translated as that which has come to, that which has arrived.
                 <br/>
                 Pitgama will utilize the Sefaria.org API to explore ideas and connections in Jewish wisdom literature.
               </p>

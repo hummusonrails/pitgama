@@ -4,10 +4,10 @@
   height: 46px;
   align-items: center;
   border: 1px solid rgba(238,238,238 ,1);
-  border-radius: 5px;
+  border-radius: 200px 200px 200px 200px;
   background-color: #abb400;
   box-shadow: 5px 10px 20px -20px rgba(85,172,238 ,1);
-  padding: 0 10px;
+  padding: 0 50px;
 }
 
 .nav-container ul {
@@ -24,6 +24,11 @@
   text-decoration: none;
   text-align: center;
   padding: 1rem;
+  cursor:url(../images/yad_cursor.png), auto;
+}
+
+#align-right {
+  text-align: right;
 }
 
 .nav-container li:hover {
