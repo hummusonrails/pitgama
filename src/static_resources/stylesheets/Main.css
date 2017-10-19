@@ -1,4 +1,16 @@
 html {
-  width: 90%;
+  width: 95%;
+  min-height: 100vh;
   margin: auto;
+  cursor:url(../images/yad_cursor.png), auto;
+}
+
+.App {
+  border-radius: 80px;
+  box-shadow: 5px 55px 50px -50px #000ab4;
+  padding-bottom: 2px;
+}
+
+.App-logo {
+  filter: drop-shadow(-2px -2px 0px black);
 }
