@@ -1,6 +1,6 @@
 /* Set the global styling for all of the app */
 html {
-  width: 100%;
+  width: 95%;
   margin: auto;
   padding-top: 2vh;
   cursor:url(../images/yad_cursor.png), auto;
@@ -31,15 +31,6 @@ html {
   margin: 0 5px;
 }
 
-.intro-box {
-  margin-top: 10px;
-  background: url(../images/torah_text.jpg);
-  background-size: cover;
-  filter: sepia(10%);
-  flex: 1;
-  padding-bottom: 20px;
-}
-
 .body-title {
   color: #000ab4;
   font-size: 6em;
@@ -49,6 +40,15 @@ html {
   color: #000ab4;
   font-size: 2em;
   padding-bottom: 30px;
+}
+
+.intro-box {
+  margin-top: 10px;
+  background: url(../images/torah_text.jpg);
+  background-size: cover;
+  filter: sepia(10%);
+  flex: 1;
+  padding-bottom: 20px;
 }
 
 button.banner-button {
