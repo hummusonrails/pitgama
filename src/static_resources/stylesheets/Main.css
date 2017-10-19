@@ -1,6 +1,6 @@
 /* Set the global styling for all of the app */
 html {
-  width: 95%;
+  width: 80%;
   margin: auto;
   padding-top: 2vh;
   cursor:url(../images/yad_cursor.png), auto;
@@ -11,7 +11,7 @@ html {
   border-radius: 80px;
   box-shadow: 1px 1px 13px 6px #000ab4;
   padding-bottom: 2px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 /* Style the logo on the top of the page */
