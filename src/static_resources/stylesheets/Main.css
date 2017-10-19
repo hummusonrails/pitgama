@@ -48,8 +48,8 @@ html {
   background-size: cover;
   filter: sepia(10%);
   flex: 1;
-  min-height: 50vh;
-  padding-bottom: 40px;
+  min-height: 40vh;
+  padding-bottom: 20px;
 }
 
 button.banner-button {
