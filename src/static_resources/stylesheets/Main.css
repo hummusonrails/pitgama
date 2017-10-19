@@ -1,17 +1,20 @@
 /* Set the global styling for all of the app */
 html {
+  cursor: url(../images/yad_cursor.png), auto;
+}
+
+body {
   width: 80%;
-  margin: auto;
-  padding-top: 2vh;
-  cursor:url(../images/yad_cursor.png), auto;
+  margin: 0 auto;
+  padding: 2vh 0;
 }
 
 /* Set the styling for the container for the main body of content on each component */
 .main-container {
   border-radius: 80px;
   box-shadow: 1px 1px 13px 6px #000ab4;
-  padding-bottom: 2px;
   min-height: 90vh;
+  overflow: hidden;
 }
 
 /* Style the logo on the top of the page */
@@ -78,9 +81,14 @@ button.banner-button a {
 
 /* media queries */
 
-@media all and (min-width: 1119px) {
-  .intro-box {
-    max-width: auto;
-    max-height: auto;
+@media (max-width: 575px) {
+  .body-title {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-title {
+    font-size: 4em;
   }
 }
