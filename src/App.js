@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './static_resources/images/pitgama_header.png';
 import './App.css';
+import './static_resources/stylesheets/Main.css'
 import './static_resources/stylesheets/Navbar.css'
 
 class App extends Component {

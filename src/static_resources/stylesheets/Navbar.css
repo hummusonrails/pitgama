@@ -1,7 +1,13 @@
 /* Global styling for navigation bar */
 
 .nav-container {
+  height: 46px;
+  align-items: center;
+  border: 1px solid rgba(238,238,238 ,1);
+  border-radius: 5px;
   background-color: #abb400;
+  box-shadow: 5px 10px 20px -20px rgba(85,172,238 ,1);
+  padding: 0 10px;
 }
 
 .nav-container ul {
@@ -9,7 +15,8 @@
   justify-content: space-around;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
+  cursor: pointer;
 }
 
 .nav-container a {
@@ -20,15 +27,17 @@
   padding: 1rem;
 }
 
-.nav-container a:hover {
+.nav-container li:hover {
+  height: 46px;
   background: #000ab4;
-  text-decoration: underline overline #abb400;
+  border: 1px solid rgba(238,238,238 ,1);
+  text-decoration: underline #abb400;
 }
 
-@media all and (max-width: 600px) {
+/*@media all and (max-width: 600px) {
   .nav-container ul {
     flex-flow: column wrap;
     padding: 0;
     z-index: 1;
   }
-}
+}*/
