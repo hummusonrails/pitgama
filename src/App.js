@@ -21,11 +21,7 @@ class App extends Component {
               <div className="intro-box">
                 <h1 className="body-title">Welcome to piṯḡāmā</h1>
                 <p className="body-intro">
-                  piṯḡāmā: פִּתְגָמָא (Aramaic) - a word or phrase
-                  <br/>
-                  Borrowed from the Persian <i>patgam</i>, which is translated as that which has come to, that which has arrived.
-                  <br/>
-                  Pitgama will utilize the Sefaria.org API to explore ideas and connections in Jewish wisdom literature.
+                  Data driven insights in Jewish text
                 </p>
                 <button className="banner-button"><a href="#">Get Started</a></button>
               </div>

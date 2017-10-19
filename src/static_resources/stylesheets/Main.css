@@ -33,12 +33,17 @@ html {
 
 .body-title {
   color: #000ab4;
+  font-family: 'Righteous', cursive;
   font-size: 6em;
+  margin-bottom: 0px;
 }
 
 .body-intro {
-  color: #000ab4;
+  color: black;
+  font-family: 'Zilla Slab Highlight', cursive;
+  text-shadow: 2px;
   font-size: 2em;
+  margin-top: 1px;
   padding-bottom: 30px;
 }
 
