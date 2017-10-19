@@ -14,7 +14,7 @@ body {
   border-radius: 80px;
   box-shadow: 1px 1px 13px 6px #000ab4;
   min-height: 90vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 /* Style the logo on the top of the page */
@@ -85,10 +85,20 @@ button.banner-button a {
   .body-title {
     font-size: 3em;
   }
+  .logo {
+    margin-left: 20px;
+    width: 70%;
+    filter: unset;
+  }
 }
 
 @media (max-width: 768px) {
   .body-title {
     font-size: 4em;
+  }
+  .logo {
+    margin-left: 20px;
+    width: 70%;
+    filter: unset;
   }
 }
