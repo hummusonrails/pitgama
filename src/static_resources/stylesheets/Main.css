@@ -80,7 +80,7 @@ button.banner-button a {
 
 @media all and (min-width: 1119px) {
   .intro-box {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: auto;
+    max-height: auto;
   }
 }
