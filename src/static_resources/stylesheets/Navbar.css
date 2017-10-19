@@ -1,9 +1,34 @@
 /* Global styling for navigation bar */
 
 .nav-container {
-  display: flex;
+  background-color: #abb400;
 }
 
-#nav-item {
+.nav-container ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.nav-container a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav-container a:hover {
+  background: #000ab4;
+  text-decoration: underline overline #abb400;
+}
+
+@media all and (max-width: 600px) {
+  .nav-container ul {
+    flex-flow: column wrap;
+    padding: 0;
+    z-index: 1;
+  }
 }
