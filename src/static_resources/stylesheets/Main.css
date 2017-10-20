@@ -88,15 +88,17 @@ button.banner-button a {
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center space-around;
   flex-wrap: nowrap;
   min-width: 60%;
   margin: 50px 5px;
 }
 
 .feature-box {
+  padding: 50px;
+  margin: 5px;
   border-radius: 5px;
-  box-shadow: -25px 25px 50px -30px #000ab4; 
+  box-shadow: -0 0 10px #000ab4;
 }
 
 
