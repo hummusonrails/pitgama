@@ -6,9 +6,16 @@
   background-color: #abb400;
   min-height: 3vh;
   margin: 0;
-  padding: 2em;
+  padding: 1em;
 }
 
 .footer-content {
   flex: 1;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+
+#heart {
+  color: #000ab4;
 }
