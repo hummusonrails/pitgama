@@ -1,33 +1,38 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { pitgamaSearch } from '../../actions/api/ApiActions';
 
 class Pitgama extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      english: [],
-      hebrew: []
-    }
-  }
 
   componentDidMount() {
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    fetch(proxyURL + 'https://www.sefaria.org/api/texts/Sanhedrin?commentary=0&pad=0')
-      .then(response => response.json())
-      .then(data => this.setState({ english: data.text, hebrew: data.he }))
-      .catch(console.log("Can’t access " + url + " response. Blocked by browser?"))
+    alert("i'm here")
+    this.props.pitgamaSearch();
   }
 
   render() {
 
+    const SearchText = function() {
+      let reducedResults = [];
+      this.props.results ?
+        this.props.results.map(result => {
+          if (result.match("פִּתְגָמָא")) {
+            reducedResults.push(result)
+            console.log(reducedResults)
+          }
+        }) : "Loading..."
+      }
     return (
       <div>
-      <p>
-        {this.state.english}
-      </p>
+        <h1>What is Pitgama?</h1>
+        <SearchText />
       </div>
     );
   }
 }
+const mapStateToProps = (state) => {
+  return ({
+    results: state.results
+  })
+}
 
-export default Pitgama;
+export default connect(mapStateToProps, { pitgamaSearch })(Pitgama);
