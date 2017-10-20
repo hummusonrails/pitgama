@@ -11,10 +11,11 @@ class Pitgama extends React.Component {
   }
 
   componentDidMount() {
-    var myInit = { method: 'GET' };
-    fetch('https://www.sefaria.org/api/texts/Sanhedrin?commentary=0&pad=0', myInit)
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    fetch(proxyURL + 'https://www.sefaria.org/api/texts/Sanhedrin?commentary=0&pad=0')
       .then(response => response.json())
       .then(data => this.setState({ english: data.text, hebrew: data.he }))
+      .catch(console.log("Can’t access " + url + " response. Blocked by browser?"))
   }
 
   render() {
