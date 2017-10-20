@@ -1,0 +1,14 @@
+/* Global styling for footer */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #abb400;
+  min-height: 3vh;
+  margin: 0;
+  padding: 2em;
+}
+
+.footer-content {
+  flex: 1;
+}
