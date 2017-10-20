@@ -20,7 +20,7 @@ class App extends Component {
             </header>
             <div className="splash-container">
               <div className="intro-box">
-                <h1 className="body-title">Welcome to piṯḡāmā</h1>
+                <h1 className="body-title">Welcome</h1>
                 <p className="body-intro">
                   Data driven insights in Jewish text
                 </p>
