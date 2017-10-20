@@ -1,55 +1,34 @@
 import React, { Component } from 'react';
-import logo from './static_resources/images/pitgama_header.png';
-import github_icon from './static_resources/images/github.png';
-import facebook_icon from './static_resources/images/facebook.png';
-import twitter_icon from './static_resources/images/twitter.png';
+import {
+  BrowserRouter as Router,
+  Route, Switch
+} from 'react-router-dom';
+import Home from './components/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './static_resources/stylesheets/Main.css'
 import './static_resources/stylesheets/Navbar.css'
 import './static_resources/stylesheets/Footer.css'
+
+const ReactRouter = () => (
+  <Router>
+    <div className="Routes">
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/about" component={Home}/>
+        <Route exact path="/contact" component={Home}/>
+      </Switch>
+    </div>
+  </Router>
+)
 
 class App extends Component {
     render() {
         return (
           <div className="main-container">
-            <header className="header">
-              <img src={logo} className="logo" alt="pitgama logo" />
-              <nav className="nav-container">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a id="align-right" href="#">About</a></li>
-                  <li><a id="align-right" href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </header>
-            <div className="splash-container">
-              <div className="intro-box">
-                <h1 className="body-title">Welcome</h1>
-                <p className="body-intro">
-                  Data driven insights in Jewish text
-                </p>
-                <button className="banner-button"><a href="#">Get Started</a></button>
-              </div>
-            </div>
-            <div className="feature-display-container">
-              <div className="feature-box">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit metus, vulputate in consectetur et, porttitor ut nibh. Aliquam rhoncus enim tristique magna auctor hendrerit. Vestibulum cursus cursus mauris, ut faucibus ligula sollicitudin venenatis. Nulla facilisi. Sed commodo mauris sed mauris efficitur dictum. Nam suscipit risus eu arcu vulputate tempor. Maecenas varius, lorem at cursus consequat, augue tortor suscipit augue, id vulputate nibh mauris nec eros. Nulla facilisi. Morbi pulvinar varius velit, aliquet malesuada ex dignissim ut.
-              </div>
-              <div className="feature-box">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit metus, vulputate in consectetur et, porttitor ut nibh. Aliquam rhoncus enim tristique magna auctor hendrerit. Vestibulum cursus cursus mauris, ut faucibus ligula sollicitudin venenatis. Nulla facilisi. Sed commodo mauris sed mauris efficitur dictum. Nam suscipit risus eu arcu vulputate tempor. Maecenas varius, lorem at cursus consequat, augue tortor suscipit augue, id vulputate nibh mauris nec eros. Nulla facilisi. Morbi pulvinar varius velit, aliquet malesuada ex dignissim ut.
-              </div>
-              <div className="feature-box">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit metus, vulputate in consectetur et, porttitor ut nibh. Aliquam rhoncus enim tristique magna auctor hendrerit. Vestibulum cursus cursus mauris, ut faucibus ligula sollicitudin venenatis. Nulla facilisi. Sed commodo mauris sed mauris efficitur dictum. Nam suscipit risus eu arcu vulputate tempor. Maecenas varius, lorem at cursus consequat, augue tortor suscipit augue, id vulputate nibh mauris nec eros. Nulla facilisi. Morbi pulvinar varius velit, aliquet malesuada ex dignissim ut.
-              </div>
-            </div>
-            <div className="footer-container">
-              <div className="footer-content">
-                &copy;2017 Pitgama: Data Driven Insights in Jewish Text
-                <br />
-                Made with <span id="heart">&#9829;</span> by Ben, Malki & Yechiel
-                <br />
-                <a href="https://github.com/benhayehudi/pitgama"><img src={github_icon} width="40px" height="40px" alt="github icon"/></a> <a href="#"><img src={facebook_icon} width="40px" height="40px" alt="facebook icon"/></a> <a href="#"><img src={twitter_icon} width="40px" height="40px" alt="twitter icon"/></a>
-              </div>
-            </div>
+            <Header />
+            <ReactRouter />
+            <Footer />
           </div>
         );
     }

@@ -37,11 +37,3 @@
   border: 1px solid rgba(238,238,238 ,1);
   text-decoration: underline #abb400;
 }
-
-/*@media all and (max-width: 600px) {
-  .nav-container ul {
-    flex-flow: column wrap;
-    padding: 0;
-    z-index: 1;
-  }
-}*/
