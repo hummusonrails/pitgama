@@ -116,6 +116,9 @@ button.banner-button a {
   .feature-display-container {
     display: none;
   }
+  .intro-box {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -129,5 +132,8 @@ button.banner-button a {
   }
   .feature-display-container {
     display: none;
+  }
+  .intro-box {
+    margin-bottom: 5px;
   }
 }
