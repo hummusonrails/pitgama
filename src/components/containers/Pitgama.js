@@ -14,9 +14,9 @@ class Pitgama extends React.Component {
     const renderTextCards =
     console.log("opening renderTextCards")
     let resultsArray = [];
-      if (this.props.results.length !== 0) {
-        console.log(resultsArray)
+      if (this.props.results !== undefined) {
         resultsArray.push(this.props.results)
+        console.log(resultsArray[0])
         resultsArray.map(result =>
           <TextCard result={result} />) }
           else {
