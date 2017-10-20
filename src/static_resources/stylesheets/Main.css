@@ -113,6 +113,9 @@ button.banner-button a {
     width: 70%;
     filter: unset;
   }
+  .feature-display-container {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -123,5 +126,8 @@ button.banner-button a {
     margin-left: 20px;
     width: 70%;
     filter: unset;
+  }
+  .feature-display-container {
+    display: none;
   }
 }
