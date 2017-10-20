@@ -28,13 +28,13 @@ class App extends Component {
               </div>
             </div>
             <div className="feature-display-container">
-              <div className="feature-1">
+              <div className="feature-box">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit metus, vulputate in consectetur et, porttitor ut nibh. Aliquam rhoncus enim tristique magna auctor hendrerit. Vestibulum cursus cursus mauris, ut faucibus ligula sollicitudin venenatis. Nulla facilisi. Sed commodo mauris sed mauris efficitur dictum. Nam suscipit risus eu arcu vulputate tempor. Maecenas varius, lorem at cursus consequat, augue tortor suscipit augue, id vulputate nibh mauris nec eros. Nulla facilisi. Morbi pulvinar varius velit, aliquet malesuada ex dignissim ut.
               </div>
-              <div className="feature-2">
+              <div className="feature-box">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit metus, vulputate in consectetur et, porttitor ut nibh. Aliquam rhoncus enim tristique magna auctor hendrerit. Vestibulum cursus cursus mauris, ut faucibus ligula sollicitudin venenatis. Nulla facilisi. Sed commodo mauris sed mauris efficitur dictum. Nam suscipit risus eu arcu vulputate tempor. Maecenas varius, lorem at cursus consequat, augue tortor suscipit augue, id vulputate nibh mauris nec eros. Nulla facilisi. Morbi pulvinar varius velit, aliquet malesuada ex dignissim ut.
               </div>
-              <div className="feature-3">
+              <div className="feature-box">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam velit metus, vulputate in consectetur et, porttitor ut nibh. Aliquam rhoncus enim tristique magna auctor hendrerit. Vestibulum cursus cursus mauris, ut faucibus ligula sollicitudin venenatis. Nulla facilisi. Sed commodo mauris sed mauris efficitur dictum. Nam suscipit risus eu arcu vulputate tempor. Maecenas varius, lorem at cursus consequat, augue tortor suscipit augue, id vulputate nibh mauris nec eros. Nulla facilisi. Morbi pulvinar varius velit, aliquet malesuada ex dignissim ut.
               </div>
             </div>

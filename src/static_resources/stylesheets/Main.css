@@ -94,6 +94,11 @@ button.banner-button a {
   margin: 50px 5px;
 }
 
+.feature-box {
+  border-radius: 5px;
+  box-shadow: -25px 25px 50px -30px #000ab4; 
+}
+
 
 /* media queries */
 
