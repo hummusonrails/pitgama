@@ -17,7 +17,7 @@ class Pitgama extends React.Component {
       if (this.props.results !== undefined) {
         resultsArray.push(this.props.results)
         cards = resultsArray.map(result =>
-          <TextCard result={result} />) 
+          <TextCard result={result} />)
         }
           else {
             cards = "Loading..."
@@ -28,7 +28,7 @@ class Pitgama extends React.Component {
     return (
       <div>
         <h1>What is Pitgama?</h1>
-        {renderTextCards} 
+        {renderTextCards}
       </div>
     );
   }
