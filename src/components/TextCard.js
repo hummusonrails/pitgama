@@ -6,8 +6,7 @@ class TextCard extends React.Component {
     return (
       <div>
         <div className="feature-box">
-        <h1>DO YOU SEE ME?</h1>
-          <h3>{this.props.result.ref}</h3>
+          <h1>{this.props.result.ref}</h1>
           <p>{this.props.result.he}</p>
         </div>
         <br />
