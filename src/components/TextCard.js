@@ -3,15 +3,29 @@ import React from 'react';
 class TextCard extends React.Component {
 
   render() {
-    return (
-      <div>
-        <div className="feature-box">
-          <h1>{this.props.result.ref}</h1>
-          <p>{this.props.result.he}</p>
-        </div>
+    if (this.props.result.he !== undefined && this.props.result.he.length > 0) {
+      for (var i = 0; i < this.props.result.he.length; i++) {
+        return (
+          <div className="feature-display-container">
+            <div className="feature-box">
+              <h1>{this.props.result.ref}</h1>
+              <p>{this.props.result.he}</p>
+            </div>
+            <br />
+          </div>
+        );
+      }
+    } else {
+      return (
+        <div className="feature-display-container">
+          <div className="feature-box">
+            <h1>{this.props.result.ref}</h1>
+            <p>{this.props.result.he}</p>
+          </div>
         <br />
       </div>
-    );
+      );
+    }
   }
 }
 

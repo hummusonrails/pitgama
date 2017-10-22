@@ -16,7 +16,8 @@ class Pitgama extends React.Component {
     let resultsArray = [];
       if (this.props.results !== undefined) {
         resultsArray.push(this.props.results)
-        cards = resultsArray.map(result =>
+        console.log(resultsArray)
+        cards = resultsArray.map((result, i) =>
           <TextCard result={result} />)
         }
           else {
