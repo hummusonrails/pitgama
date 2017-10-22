@@ -1,13 +1,7 @@
-var myHeaders = new Headers({
-  'Content-Type': 'text/json',
-  'Origin': 'https://pitgama.herokuapp.com'
-});
 
 export function pitgamaSearch() {
     return (dispatch => {
-        fetch(`https://crossorigin.me/https://www.sefaria.org/api/texts/Sanhedrin?pad=0`, {
-          headers: myHeaders
-          })
+        fetch(`https://jsonp.herokuapp.com?url=http://www.sefaria.org/api/texts/Sanhedrin?pad=0`)
           .then(data => data.json())
           .then(data => dispatch({ type: 'GET_RESULTS', data: data }))
     })
