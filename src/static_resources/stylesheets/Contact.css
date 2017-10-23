@@ -1,6 +1,18 @@
 
 /* Contact Page CSS */
 
+.contact-opening {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center space-around;
+  align-items: center;
+  text-align: center;
+  font-family: 'Elsie Swash Caps', cursive;
+  font-size: 2em;
+  color: #000ab4;
+}
+
 .bio-display-container {
   display: flex;
   flex-direction: row;
@@ -56,8 +68,18 @@
   max-width: 70%;
 }
 
+.bio-title {
+  color: #000ab4;
+  font-family: 'Righteous', cursive;
+  font-size: 4em;
+  margin-bottom: 0px;
+}
+
 @media only screen and (max-width: 900px) {
-  .right-container p {
+  .right-container p.bio-desc {
     display: none;
+  }
+  .bio-title {
+    font-size: 1em;
   }
 }
