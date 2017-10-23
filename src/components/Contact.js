@@ -54,7 +54,7 @@ class Contact extends React.Component {
             <div className="right-container">
               <div className="right-content">
                 <h5 className="bio-title">Malki Davis</h5>
-                <p className="bio-desc">Background of IT, now venturing into the world of software engineering. Familiar with Ruby/Rails, Javascript, JQuery, React, Redux, Elixir, and many more on the list to learn!</p>
+                <p className="bio-desc">Malki has a background in IT, now venturing into the world of software engineering. Familiar with Ruby/Rails, Javascript, JQuery, React, Redux, Elixir, and many more on the list to learn!</p>
                 <p className="social-links"><a href="https://github.com/mxdavis/"><img src={github_icon} width="40px" height="40px" alt="github icon"/></a><a href="#"><img src={twitter_icon} width="40px" height="40px" alt="twitter icon"/></a></p>
               </div>
             </div>
@@ -69,7 +69,7 @@ class Contact extends React.Component {
             <div className="right-container">
               <div className="right-content">
                 <h5 className="bio-title">Yechiel Kalmenson</h5>
-                <p className="bio-desc">Brooklyn born and bred, I Got my rabbinical training in Israel. Went on to teach third grade in the Jewish Online School and adult education through Chabad. After a brief stint in tech support, I went on to study web development. I currently live in Brooklyn, NY with my family, supporting my passions for teaching, coding, and flying.</p>
+                <p className="bio-desc">Yechiel was born and raised in Brooklyn. He got his rabbinical training in Israel. Went on to teach third grade in the Jewish Online School and adult education through Chabad. After a brief stint in tech support, he went on to study web development at Flatiron. He currently lives in Brooklyn, NY with his family, supporting his passions for teaching, coding, and flying.</p>
                 <p className="social-links"><a href="https://github.com/achasveachas/"><img src={github_icon} width="40px" height="40px" alt="github icon"/></a><a href="https://twitter.com/yechielk"><img src={twitter_icon} width="40px" height="40px" alt="twitter icon"/></a></p>
               </div>
             </div>
