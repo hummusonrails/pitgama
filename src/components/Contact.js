@@ -19,7 +19,7 @@ class Contact extends React.Component {
           </div>
         </div>
 
-        <div className="feature-display-container">
+        <div className="bio-display-container">
           <div className="feature-box">
 
           <div className="bio-container">

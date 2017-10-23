@@ -1,6 +1,19 @@
 
-/* How To Use */
+/* Contact Page CSS */
+
+.bio-display-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center space-around;
+  flex-wrap: wrap;
+  min-width: 60%;
+  margin: 50px 5px;
+}
+
 .bio-container {
+  display: flex;
   width: 100%;
   height: 21vw;
   padding: 5px;
@@ -19,6 +32,8 @@
 }
 
 .right-container {
+  box-shadow: -0 0 10px #abb400;
+  transform: rotate(10deg);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -26,6 +41,9 @@
   background: #fff;
   width: 50%;
   float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 70%;
 }
 
 .image-content img {
@@ -34,14 +52,12 @@
 }
 
 .right-content {
+  flex-direction: column;
   max-width: 70%;
 }
 
-
-@media screen and (max-width: 999px) {
-  .how-container {display: block; width: 100%; height: auto; text-align: center; margin: 0 auto 60px auto;}
-  .left-container  {display: block; width: 100%; height: auto; float: none; text-align: center; margin: 15px auto 0px auto;}
-  .right-container {display: block; width: 100%; height: auto; float: none; text-align: center; margin: 15px auto 0px auto;}
-  .left-content {display: block; width: 100%; height: auto; float: none; text-align: center; margin: 15px auto 0px auto;}
-  .right-content {display: block; width: 100%; height: auto; float: none; text-align: center; margin: 15px auto 0px auto; max-width: 90%;}
+@media only screen and (max-width: 900px) {
+  .right-container p {
+    display: none;
+  }
 }
