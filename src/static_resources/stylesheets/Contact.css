@@ -1,0 +1,15 @@
+.bio_box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: -0 0 10px #abb400;
+}
+
+#bio_pic img {
+  display: flex;
+  flex-direction: column;
+  border-radius: 280px;
+  width: 40%;
+  padding: 10px;
+  justify-content: space-between;
+}

@@ -10,9 +10,9 @@ class Header extends React.Component {
         <img src={logo} className="logo" alt="pitgama logo" />
         <nav className="nav-container">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a id="align-right" href="#">About</a></li>
-            <li><a id="align-right" href="#">Contact</a></li>
+            <li><a id="align-right" href="/contact">Contact</a></li>
           </ul>
         </nav>
       </header>
