@@ -15,7 +15,7 @@ class About extends React.Component {
           </div>
         </div>
         <div className="feature-display-container">
-          <div className="feature-about-box">
+          <div className="feature-box">
             <p id="text-align-left"><span id="opening-sentence">Piṯḡāmā begins with a word, <i>actually many words</i>.</span></p>
 
             <p id="text-align-left"><span id="text-body">Jewish tradition is a text based tradition. The timeless legacy of Jewish faith and civilization is not a building or a piece of art but rather words; many, many words. These words span the course of thousands of years and were given life in cultures across the globe. Each text was never meant to live in isolation from the other. Each work was not meant to be its own island. Rather, the words and texts interact with each other. Comparing. Contrasing. Arguing. Affirming. Challenging. In fact, for the past hundreds of years, the most studied colletion of rabbinic texts, the Babylonian Talmud has been printed like a hardcopy interlinked website.</span></p>
