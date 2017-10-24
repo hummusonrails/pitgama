@@ -116,6 +116,7 @@ button.banner-button a {
 }
 
 .feature-about-box {
+  display: flex;
   padding: 50px;
   margin: 5px;
   border-radius: 5px;
@@ -124,6 +125,7 @@ button.banner-button a {
 #feature-text-area {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
   width: 70%;
 }
 
