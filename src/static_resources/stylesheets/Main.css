@@ -98,7 +98,83 @@ button.banner-button a {
   padding: 50px;
   margin: 5px;
   border-radius: 5px;
-  box-shadow: -0 0 10px #000ab4;
+  box-shadow: 0px 1px 3px #000ab4;
+
+}
+
+/* Feature boxes for other pages */
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-width: 60%;
+  justify-content: space-around;
+}
+
+.feature-container p {
+}
+
+.feature-about-box {
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#feature-text-area {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+#feature-image-area {
+  flex: auto;
+  display: flex;
+  width: 30%;
+}
+
+/* Feature boxes image pairing */
+
+#paired-image-interconnected {
+  float: right;
+  height: auto;
+  background-image: url("http://web.nli.org.il/sites/NLI/Hebrew/library/reading_corner/PublishingImages/daf_gemara/Bomberg%20Babylonian%20Talmud%20Venice%20Pesachim%201520%2035%20V%204087%20c.jpg");
+  background-size: contain;
+  background-size: 100% 100%;
+  min-width: 35vh;
+  min-height: 20vh;
+  border-radius: 100px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#paired-image-interconnected:hover {
+  float: right;
+  height: auto;
+  background-image: url("http://news.bbcimg.co.uk/news/special/panels/13/nov/talmud/img/graphic_1383310626.jpg");
+  background-size: contain;
+  background-size: 100% 100%;
+  min-width: 35vh;
+  min-height: 20vh;
+}
+
+/* Global text styling */
+
+#text-align-left {
+  text-align: left;
+  padding-right: 10px;
+}
+
+#opening-sentence {
+  color: #000ab4;
+  font-family: 'Righteous', cursive;
+  font-size: 3em;
+  margin-bottom: 0px;
+}
+
+#text-body {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.5em;
+  color: #abb400;
 }
 
 

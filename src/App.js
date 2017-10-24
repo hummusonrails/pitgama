@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Pitgama from './components/containers/Pitgama';
 import Contact from './components/Contact';
+import About from './components/containers/About';
 import './static_resources/stylesheets/Main.css'
 import './static_resources/stylesheets/Navbar.css'
 import './static_resources/stylesheets/Footer.css'
@@ -18,7 +19,7 @@ const ReactRouter = () => (
     <div className="Routes">
       <Switch>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/about" component={Home}/>
+        <Route exact path="/about" component={About}/>
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/pitgama" component={Pitgama}/>
       </Switch>

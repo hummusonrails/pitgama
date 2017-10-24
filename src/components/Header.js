@@ -11,7 +11,7 @@ class Header extends React.Component {
         <nav className="nav-container">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a id="align-right" href="#">About</a></li>
+            <li><a id="align-right" href="/about">About</a></li>
             <li><a id="align-right" href="/contact">Contact</a></li>
           </ul>
         </nav>
