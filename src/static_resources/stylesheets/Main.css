@@ -117,7 +117,7 @@ button.banner-button a {
 
 .feature-about-box {
   display: flex;
-  padding: 50px;
+  padding: 0 50px;
   margin: 5px;
   border-radius: 5px;
 }
@@ -129,14 +129,17 @@ button.banner-button a {
 #feature-text-area {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
   width: 70%;
+  height: 50%;
 }
 
 #feature-image-area {
   flex: auto;
   display: flex;
+  padding-top: 40px;
   width: 30%;
+  height: 90%;
+
 }
 
 /* Feature boxes image pairing */
