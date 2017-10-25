@@ -53,6 +53,19 @@ body {
   padding-bottom: 30px;
 }
 
+.home-feature-box-header {
+  color: black;
+  font-family: 'Zilla Slab Highlight', cursive;
+  text-shadow: 2px;
+  font-size: 3em;
+  margin-top: 1px;
+  padding-bottom: 30px;
+}
+
+.home-feature-box-header a {
+  color: #000ab4;
+}
+
 .intro-box {
   margin-top: 10px;
   background: url(../images/torah_text.jpg);
@@ -95,11 +108,28 @@ button.banner-button a {
 }
 
 .feature-box {
+  flex: 1;
+  align-items: center;
   padding: 50px;
   margin: 5px;
   border-radius: 5px;
   box-shadow: 0px 1px 3px #000ab4;
 
+}
+
+.home-feature-box {
+  flex: 1;
+  align-items: center;
+  padding: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px #000ab4;
+  background: url(../images/feature_box_bg.jpg);
+  background-size: cover;
+}
+
+.home-feature-box:hover {
+  transform: scale(1.1);
 }
 
 /* Feature boxes for other pages */
