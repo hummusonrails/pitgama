@@ -281,7 +281,20 @@ button.banner-button a {
   }
 
   .fix-height #feature-image-area #paired-image-interconnected {
+<<<<<<< 1b178577ba832a3bc53b5047583b143a78ded781
     display: none;
+=======
+    background-repeat: no-repeat;
+    min-width: auto;
+    background-position: top center;
+    background-size: cover;
+    height: 150px;
+    border-radius: 7px;
+    max-width: 190px;
+    margin: auto;
+    width: 100%;
+    min-height: 80px;
+>>>>>>> Trying fix height image overflow
   }
 }
 
