@@ -282,6 +282,8 @@ button.banner-button a {
     width: 90%;
     height: 530px;
     border-radius: 50px;
+    background-position: center;
+    background-size: cover;
   }
 }
 
