@@ -14,7 +14,7 @@ class Header extends React.Component {
           <br />
           Made with <span id="heart">&#9829;</span> by Ben, Malki & Yechiel
           <br />
-          <a href="https://github.com/benhayehudi/pitgama"><img src={github_icon} width="40px" height="40px" alt="github icon"/></a> <a href="#"><img src={facebook_icon} width="40px" height="40px" alt="facebook icon"/></a> <a href="#"><img src={twitter_icon} width="40px" height="40px" alt="twitter icon"/></a>
+          <a href="https://github.com/benhayehudi/pitgama"><img src={github_icon} width="40px" height="40px" alt="github icon"/></a> <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//pitgama.herokuapp.com"><img src={facebook_icon} width="40px" height="40px" alt="facebook icon"/></a> <a href="https://twitter.com/home?status=Check%20out%20Pitgama%3A%20Data%20Driven%20Insights%20in%20Jewish%20Text%20at%20http%3A//pitgama.herokuapp.com"><img src={twitter_icon} width="40px" height="40px" alt="twitter icon"/></a>
         </div>
       </div>
     );
