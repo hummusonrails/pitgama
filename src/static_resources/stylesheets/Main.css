@@ -204,6 +204,9 @@ button.banner-button a {
   .intro-box {
     margin-bottom: 5px;
   }
+  .fix-height #feature-image-area #paired-image-interconnected {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -225,7 +228,7 @@ button.banner-button a {
 .body-title {
   font-size: 28px;
   }
-  
+
   .body-intro {
     font-size: 23px;
     padding-bottom: 0;
@@ -278,15 +281,7 @@ button.banner-button a {
   }
 
   .fix-height #feature-image-area #paired-image-interconnected {
-    background-repeat: no-repeat;
-    min-width: auto;
-    background-position: top center;
-    background-size: cover;
-    height: 170px;
-    border-radius: 7px;
-    max-width: 190px;
-    margin: auto;
-    width: 100%;
+    display: none;
   }
 }
 
@@ -294,7 +289,8 @@ button.banner-button a {
 @media screen and (min-width: 768px)  and (max-width: 1200px) {
   .fix-height #feature-image-area #paired-image-interconnected {
     height: 280px;
-    width: 100%;
+    width: 80%;
+    padding-right: 50px;
     max-width: 320px;
   }
 }
