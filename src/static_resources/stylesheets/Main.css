@@ -203,7 +203,7 @@ button.banner-button a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .body-title {
     font-size: 4em;
   }
@@ -272,24 +272,26 @@ button.banner-button a {
 
   .fix-height #feature-image-area {
     width: 100%;
-    padding: 10px;
   }
 
   .fix-height #feature-image-area #paired-image-interconnected {
-    background-size: contain;
     background-repeat: no-repeat;
     min-width: auto;
-    width: 90%;
-    height: 530px;
-    border-radius: 50px;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
+    height: 170px;
+    border-radius: 7px;
+    max-width: 190px;
+    margin: auto;
+    width: 100%;
   }
 }
 
 
 @media screen and (min-width: 768px)  and (max-width: 1200px) {
-  .fix-height #paired-image-interconnected {
-    height: 600px;
+  .fix-height #feature-image-area #paired-image-interconnected {
+    height: 280px;
+    width: 100%;
+    max-width: 320px;
   }
 }
