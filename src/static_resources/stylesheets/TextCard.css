@@ -11,5 +11,14 @@
   margin: 2px;
   border-radius: 5px;
   box-shadow: 0px 1px 3px #000ab4;
+}
 
+#hebrew-textbody {
+  font-family: 'Bellefair', serif;
+  font-size: 1.2em;
+}
+
+#english-textbody {
+  font-family: 'Crimson Text', serif;
+  font-size: 1em;
 }

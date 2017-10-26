@@ -13,10 +13,10 @@ class TextCard extends React.Component {
         return (
           <div className="text-columns">
             <div className="text-box">
-              <p>{this.props.result.he}</p>
+              <p id="hebrew-textbody">{this.props.result.he}</p>
             </div>
             <div className="text-box">
-              <p id="text-body">{strippedEnglish}</p>
+              <p id="english-textbody">{strippedEnglish}</p>
             </div>
             <br />
           </div>
