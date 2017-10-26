@@ -13,6 +13,8 @@ import './static_resources/stylesheets/Main.css'
 import './static_resources/stylesheets/Navbar.css'
 import './static_resources/stylesheets/Footer.css'
 import './static_resources/stylesheets/Contact.css'
+import './static_resources/stylesheets/TextCard.css'
+
 
 const ReactRouter = () => (
   <Router>

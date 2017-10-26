@@ -24,9 +24,18 @@ class Pitgama extends React.Component {
           }
 
     return (
-      <div>
-        <h1>What is Pitgama?</h1>
-        {cards}
+      <div className="about-page">
+        <div className="splash-container">
+          <div className="intro-box">
+            <h1 className="body-title">{this.props.results.ref}</h1>
+            <p className="body-intro">
+              A Look Inside
+            </p>
+          </div>
+        </div>
+        <div className="feature-display-container">
+          {cards}
+        </div>
       </div>
     );
   }

@@ -1,0 +1,15 @@
+.text-columns {
+  display: flex;
+}
+
+.text-box {
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-basis: 50%;
+  align-items: center;
+  padding: 50px;
+  margin: 2px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px #000ab4;
+
+}
