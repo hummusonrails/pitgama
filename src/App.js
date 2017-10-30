@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Pitgama from './components/containers/Pitgama';
+import Bruriah from './components/containers/Bruriah';
 import Contact from './components/Contact';
 import About from './components/containers/About';
 import './static_resources/stylesheets/Main.css'
@@ -24,6 +25,7 @@ const ReactRouter = () => (
         <Route exact path="/about" component={About}/>
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/pitgama" component={Pitgama}/>
+        <Route exact path="/features/bruriah" component={Bruriah}/>
       </Switch>
     </div>
   </Router>
