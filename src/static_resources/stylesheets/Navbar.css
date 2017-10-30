@@ -47,6 +47,7 @@
     display: block;
 }
 
+
 #align-right, #align-left {
   justify-content: space-between;
   flex-wrap: wrap;
