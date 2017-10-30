@@ -31,10 +31,16 @@ class Bruriah extends React.Component {
         "Eruvin",
         "Sanhedrin",
         ],
-      datasets: [
-          {
+      datasets: [{
               data: [2, 1],
-
+              backgroundColor: [
+                'rgba(171, 180, 0, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(0, 10, 180, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+              ]
           }]
      };
 

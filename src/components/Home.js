@@ -20,7 +20,7 @@ class Home extends React.Component {
             <span className="home-feature-box-header"><a href="/about">ABOUT</a></span>
           </div>
           <div className="home-feature-box">
-            <span className="home-feature-box-header"><a href="#">FEATURES</a></span>
+            <span className="home-feature-box-header"><a href="/features/bruriah">FEATURES</a></span>
           </div>
           <div className="home-feature-box">
             <span className="home-feature-box-header"><a href="/contact">CONTACT</a></span>

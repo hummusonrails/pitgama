@@ -1,5 +1,3 @@
-'use strict'
-
   export default function returnWord(data, word) {
     let filteredArr = [];
         if (data.search(word) >= 0) {
