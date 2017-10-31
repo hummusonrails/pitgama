@@ -10,11 +10,14 @@ import Pitgama from './components/containers/Pitgama';
 import Bruriah from './components/containers/Bruriah';
 import Contact from './components/Contact';
 import About from './components/containers/About';
+import Features from './components/Features';
 import './static_resources/stylesheets/Main.css'
 import './static_resources/stylesheets/Navbar.css'
 import './static_resources/stylesheets/Footer.css'
 import './static_resources/stylesheets/Contact.css'
-import './static_resources/stylesheets/TextCard.css'
+import './static_resources/stylesheets/PitgamaCard.css'
+import './static_resources/stylesheets/FeatureCard.css'
+
 
 
 const ReactRouter = () => (
@@ -25,6 +28,7 @@ const ReactRouter = () => (
         <Route exact path="/about" component={About}/>
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/pitgama" component={Pitgama}/>
+        <Route exact path="/features" component={Features}/>
         <Route exact path="/features/bruriah" component={Bruriah}/>
       </Switch>
     </div>

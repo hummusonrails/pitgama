@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { pitgamaSearch } from '../../actions/api/ApiActions';
-import TextCard from '../TextCard';
+import PitgamaCard from '../PitgamaCard';
 
 class Pitgama extends React.Component {
 
@@ -17,7 +17,7 @@ class Pitgama extends React.Component {
       if (this.props.results !== undefined) {
         resultsArray.push(this.props.results)
         cards = resultsArray.map((result, i) =>
-          <TextCard result={result} />)
+          <PitgamaCard result={result} />)
       }
           else {
             cards = "Loading..."

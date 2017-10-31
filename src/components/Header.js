@@ -14,7 +14,7 @@ class Header extends React.Component {
               <li id="align-left"><a href="/">Home</a></li>
             </div>
             <div className="dropdown">
-              <li id="align-left"><a href="#">Features</a></li>
+              <li id="align-left"><a href="/features">Features</a></li>
               <div className="dropdown-content">
                 <li id="align-left"><a href="/features/bruriah">Bruriah in the Talmud</a></li>
               </div>
