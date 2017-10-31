@@ -12,7 +12,7 @@ class Home extends React.Component {
             <p className="body-intro">
               Data driven insights in Jewish text
             </p>
-            <button className="banner-button"><a href="/pitgama">Get Started</a></button>
+            <button className="banner-button"><a href="/features">Get Started</a></button>
           </div>
         </div>
         <div className="feature-display-container">

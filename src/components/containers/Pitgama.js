@@ -27,16 +27,27 @@ class Pitgama extends React.Component {
       <div className="about-page">
         <div className="splash-container">
           <div className="intro-box">
-            <h1 className="body-title">{this.props.results.ref}</h1>
+            <h1 className="body-title">Piṯḡāmā</h1>
             <p className="body-intro">
-              A Look Inside
+              One Textual Source
             </p>
           </div>
         </div>
+
+        <div className="fix-height">
+          <div className="feature-display-container">
+            <div className="feature-box">
+              <p id="text-align-left"><span id="opening-sentence">Where does this word come from?</span></p>
+
+              <p id="text-align-left"><span id="text-body">Piṯḡāmā is an interesting word. It only appears a limited number of times throughout Jewish texts, both in Tanakh and in rabbinic literature. One such example is this text from the Targum to the Song of Songs 2:5. What do you make of this text?</span></p>
+            </div>
+          </div>
+
         <div className="feature-display-container">
           {cards}
         </div>
       </div>
+    </div>
     );
   }
 }

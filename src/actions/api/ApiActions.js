@@ -20,6 +20,22 @@ export function bruriahSearch2() {
     return (dispatch => {
         fetchJsonp(`https://www.sefaria.org/api/texts/Pesachim.62b?commentary=0&context=0`)
           .then(data => data.json())
-          .then(data => dispatch({ type: 'GET_MORE_RESULTS', data: data }))
+          .then(data => dispatch({ type: 'SECOND_TEXT', data: data }))
+    })
+}
+
+export function bruriahSearch3() {
+    return (dispatch => {
+        fetchJsonp(`https://www.sefaria.org/api/texts/Berakhot.10a?commentary=0&context=0`)
+          .then(data => data.json())
+          .then(data => dispatch({ type: 'THIRD_TEXT', data: data }))
+    })
+}
+
+export function bruriahSearch4() {
+    return (dispatch => {
+        fetchJsonp(`https://www.sefaria.org/api/texts/Avodah_Zarah.18b?commentary=0&context=0`)
+          .then(data => data.json())
+          .then(data => dispatch({ type: 'FOURTH_TEXT', data: data }))
     })
 }

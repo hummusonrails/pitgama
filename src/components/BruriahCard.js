@@ -7,7 +7,7 @@ class BruriahCard extends React.Component {
 
     let filteredHebrew;
     if (this.props.result.he !== undefined) {
-      filteredHebrew = returnWordInArr(this.props.result.he, "ברוריה");
+      filteredHebrew = returnWordInArr(this.props.result.he, "ברוריה", "ברוריא");
     } else {
       filteredHebrew = "Loading..."
     }
@@ -28,17 +28,25 @@ class BruriahCard extends React.Component {
     }
 
         return (
-          <div className="text-columns">
-            <div className="text-box">
-              <p id="hebrew-textbody">{this.props.result.heSectionRef}</p>
-              <p id="hebrew-textbody">{filteredHebrew}</p>
+        <div className="fix-height">
+          <div className="texts-display-container">
+
+            <div class="text-feature-card">
+              <div class="feature-card-header">{this.props.result.ref}</div>
+              <div class="feature-card-main">
+                <div class="feature-main-description">{filteredHebrew}</div>
+              </div>
             </div>
-            <div className="text-box">
-              <p id="english-textbody">{this.props.result.title}</p>
-              <p id="english-textbody">{strippedEnglish}</p>
+
+            <div class="text-feature-card">
+              <div class="feature-card-header">{this.props.result.heSectionRef}</div>
+              <div class="feature-card-main">
+                <div class="feature-main-description">{strippedEnglish}</div>
+              </div>
             </div>
-            <br />
+
           </div>
+        </div>
         );
       }
 }

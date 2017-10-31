@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bruriahSearch, bruriahSearch2 } from '../../actions/api/ApiActions';
+import { bruriahSearch, bruriahSearch2, bruriahSearch3, bruriahSearch4 } from '../../actions/api/ApiActions';
 import {Doughnut} from 'react-chartjs-2';
 import BruriahCard from '../BruriahCard';
 
@@ -9,6 +9,8 @@ class Bruriah extends React.Component {
   componentDidMount() {
     this.props.bruriahSearch();
     this.props.bruriahSearch2();
+    this.props.bruriahSearch3();
+    this.props.bruriahSearch4();
   }
 
   render() {
@@ -16,9 +18,11 @@ class Bruriah extends React.Component {
     let cards =
     console.log("opening renderTextCards")
     let resultsArray = [];
-      if (this.props.results !== undefined && this.props.addlresults !== undefined) {
+      if (this.props.results !== undefined && this.props.addlresults !== undefined && this.props.thirdresults !== undefined && this.props.fourthresults !== undefined) {
         resultsArray.push(this.props.results)
         resultsArray.push(this.props.addlresults)
+        resultsArray.push(this.props.thirdresults)
+        resultsArray.push(this.props.fourthresults)
         cards = resultsArray.map((result, i) =>
           <BruriahCard result={result} />)
       }
@@ -30,9 +34,11 @@ class Bruriah extends React.Component {
       labels: [
         "Eruvin",
         "Sanhedrin",
+        "Berakhot",
+        "Avodah Zarah"
         ],
       datasets: [{
-              data: [2, 1],
+              data: [1, 1, 1, 1],
               backgroundColor: [
                 'rgba(171, 180, 0, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -75,8 +81,10 @@ class Bruriah extends React.Component {
 const mapStateToProps = (state) => {
   return ({
     results: state.results,
-    addlresults: state.addlresults
+    addlresults: state.addlresults,
+    thirdresults: state.thirdresults,
+    fourthresults: state.fourthresults
   })
 }
 
-export default connect(mapStateToProps, { bruriahSearch, bruriahSearch2 })(Bruriah);
+export default connect(mapStateToProps, { bruriahSearch, bruriahSearch2, bruriahSearch3, bruriahSearch4 })(Bruriah);

@@ -1,6 +1,8 @@
 let initialState = {
     results: [],
-    addlresults: []
+    addlresults: [],
+    thirdresults: [],
+    fourthresults: []
 }
 
 function ApiReducer(state = initialState, action) {
@@ -9,9 +11,17 @@ function ApiReducer(state = initialState, action) {
             return Object.assign({}, state, {
                 results: action.data
               })
-        case 'GET_MORE_RESULTS':
+        case 'SECOND_TEXT':
           return Object.assign({}, state, {
             addlresults: action.data
+              })
+        case 'THIRD_TEXT':
+          return Object.assign({}, state, {
+            thirdresults: action.data
+              })
+        case 'FOURTH_TEXT':
+          return Object.assign({}, state, {
+            fourthresults: action.data
               })
         default:
             return state;
