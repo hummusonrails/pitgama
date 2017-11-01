@@ -3,7 +3,7 @@ import ben_pic from '../static_resources/images/ben.png';
 import malki_pic from '../static_resources/images/malki.jpg';
 import yechiel_pic from '../static_resources/images/yechiel.jpg';
 import github_icon from '../static_resources/images/github.png';
-import facebook_icon from '../static_resources/images/facebook.png';
+// import facebook_icon from '../static_resources/images/facebook.png';
 import twitter_icon from '../static_resources/images/twitter.png';
 
 class Contact extends React.Component {
