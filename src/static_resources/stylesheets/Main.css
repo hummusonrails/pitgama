@@ -336,7 +336,16 @@ button.banner-button a {
   }
 
   .fix-height #feature-image-area #paired-image-interconnected {
-    display: none;
+    background-repeat: no-repeat;
+    min-width: auto;
+    background-position: top center;
+    background-size: cover;
+    height: 150px;
+    border-radius: 7px;
+    max-width: 190px;
+    margin: auto;
+    width: 100%;
+    min-height: 80px;
   }
 }
 
