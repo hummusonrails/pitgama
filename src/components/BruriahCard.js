@@ -5,26 +5,19 @@ class BruriahCard extends React.Component {
 
   render() {
 
-    let filteredHebrew;
-    if (this.props.result.he !== undefined) {
-      filteredHebrew = returnWordInArr(this.props.result.he, "ברוריה", "ברוריא");
-    } else {
-      filteredHebrew = "Loading..."
-    }
+    let filteredHebrew, filteredEnglish, strippedEnglish;
+    
+    this.props.result.he ?
+              filteredHebrew = returnWordInArr(this.props.result.he, "ברוריה", "ברוריא") :
+              filteredHebrew = "Loading..."
 
-    let filteredEnglish;
-    if (this.props.result.text !== undefined) {
-      filteredEnglish = returnWordInArr(this.props.result.text, "Berurya");
-    } else {
-      filteredEnglish = "Loading..."
-    }
+    this.props.result.text ?
+              filteredEnglish = returnWordInArr(this.props.result.text, "Berurya") :
+              filteredEnglish = "Loading..."
 
-    let strippedEnglish = '';
-    if (filteredEnglish !== undefined) {
-      strippedEnglish = filteredEnglish.toString().replace(/<\/?[^>]+>/gi, '')
-    } else {
-      strippedEnglish = "Loading..."
-    }
+    filteredEnglish ?
+              strippedEnglish = filteredEnglish.toString().replace(/<\/?[^>]+>/gi, '') :
+              strippedEnglish = "Loading..."
 
         return (
         <div className="fix-height">
