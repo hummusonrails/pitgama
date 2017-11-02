@@ -11,17 +11,12 @@ class Pitgama extends React.Component {
 
   render() {
 
-    let cards =
-    console.log("opening renderTextCards")
-    let resultsArray = [];
-      if (this.props.results !== undefined) {
-        resultsArray.push(this.props.results)
+    let cards = "Loading..."
+      if (this.props.results) {
+        let resultsArray = [this.props.results]
         cards = resultsArray.map((result, i) =>
-          <PitgamaCard result={result} />)
+          <PitgamaCard result={result} key={i} />)
       }
-          else {
-            cards = "Loading..."
-          }
 
     return (
       <div className="about-page">
