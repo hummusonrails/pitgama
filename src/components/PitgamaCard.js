@@ -5,21 +5,15 @@ class TextCard extends React.Component {
 
   render() {
 
-    let filteredHebrew;
-    if (this.props.result.he !== undefined) {
-      filteredHebrew = returnWord(this.props.result.he, "פִּתְגָמֵי");
-      console.log(this.props.result.he)
-      console.log(filteredHebrew)
-    } else {
-      filteredHebrew = "Loading..."
-    }
+    let filteredHebrew, strippedEnglish
 
-    let strippedEnglish = '';
-    if (this.props.result.text !== undefined) {
-      strippedEnglish = this.props.result.text.toString().replace(/<\/?[^>]+>/gi, '')
-    } else {
-      strippedEnglish = "Loading..."
-    }
+    this.props.result.he ?
+      filteredHebrew = returnWord(this.props.result.he, "פִּתְגָמֵי") :
+      filteredHebrew = "Loading..."
+
+    this.props.result.text ?
+      strippedEnglish = this.props.result.text.toString().replace(/<\/?[^>]+>/gi, '') :
+      strippedEnglish = "Loading..." 
 
         return (
           <div className="text-columns">
