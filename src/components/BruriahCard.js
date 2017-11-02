@@ -22,7 +22,6 @@ class BruriahCard extends React.Component {
     let strippedEnglish = '';
     if (filteredEnglish !== undefined) {
       strippedEnglish = filteredEnglish.toString().replace(/<\/?[^>]+>/gi, '')
-      console.log(strippedEnglish)
     } else {
       strippedEnglish = "Loading..."
     }
@@ -31,17 +30,17 @@ class BruriahCard extends React.Component {
         <div className="fix-height">
           <div className="texts-display-container">
 
-            <div class="text-feature-card">
-              <div class="feature-card-header"><a href={'https://www.sefaria.org/' + this.props.result.ref} target="_blank">{this.props.result.heSectionRef}</a></div>
-              <div class="feature-card-main">
-                <div class="feature-main-description">{filteredHebrew}</div>
+            <div className="text-feature-card">
+              <div className="feature-card-header"><a href={'https://www.sefaria.org/' + this.props.result.ref} target="_blank">{this.props.result.heSectionRef}</a></div>
+              <div className="feature-card-main">
+                <div className="feature-main-description">{filteredHebrew}</div>
               </div>
             </div>
 
-            <div class="text-feature-card">
-              <div class="feature-card-header"><a href={'https://www.sefaria.org/' + this.props.result.heSectionRef} target="_blank">{this.props.result.ref}</a></div>
-              <div class="feature-card-main">
-                <div class="feature-main-description">{strippedEnglish}</div>
+            <div className="text-feature-card">
+              <div className="feature-card-header"><a href={'https://www.sefaria.org/' + this.props.result.heSectionRef} target="_blank">{this.props.result.ref}</a></div>
+              <div className="feature-card-main">
+                <div className="feature-main-description">{strippedEnglish}</div>
               </div>
             </div>
 
