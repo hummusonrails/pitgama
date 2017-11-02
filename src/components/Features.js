@@ -30,19 +30,19 @@ class Features extends React.Component {
 
       <div className="features-display-container">
 
-        <div class="feature-card">
-          <div class="feature-card-header">Bruriah</div>
-          <div class="feature-card-main">
-            <a href="/features/bruriah"><i class="material-icons">assignment_ind</i></a>
-            <div class="feature-main-description"><a href="/features/bruriah">Bruriah in the Talmud Bavli</a></div>
+        <div className="feature-card">
+          <div className="feature-card-header">Bruriah</div>
+          <div className="feature-card-main">
+            <a href="/features/bruriah"><i className="material-icons">assignment_ind</i></a>
+            <div className="feature-main-description"><a href="/features/bruriah">Bruriah in the Talmud Bavli</a></div>
           </div>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-card-header">Piṯḡāmā</div>
-          <div class="feature-card-main">
-            <a href="/pitgama"><i class="material-icons">info</i></a>
-            <div class="feature-main-description"><a href="/pitgama">Where does the word come from?</a></div>
+        <div className="feature-card">
+          <div className="feature-card-header">Piṯḡāmā</div>
+          <div className="feature-card-main">
+            <a href="/pitgama"><i className="material-icons">info</i></a>
+            <div className="feature-main-description"><a href="/pitgama">Where does the word come from?</a></div>
           </div>
         </div>
 
