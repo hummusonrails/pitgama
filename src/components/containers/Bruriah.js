@@ -24,7 +24,7 @@ class Bruriah extends React.Component {
         resultsArray.push(this.props.thirdresults)
         resultsArray.push(this.props.fourthresults)
         cards = resultsArray.map((result, i) =>
-          <BruriahCard result={result} />)
+          <BruriahCard result={result} key={i} />)
       }
           else {
             cards = "Loading..."
