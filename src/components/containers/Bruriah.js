@@ -15,16 +15,14 @@ class Bruriah extends React.Component {
 
   render() {
 
-    let cards =
-    console.log("opening renderTextCards")
-    let resultsArray = [];
-      if (this.props.results !== undefined && this.props.addlresults !== undefined && this.props.thirdresults !== undefined && this.props.fourthresults !== undefined) {
-        resultsArray.push(this.props.results)
-        resultsArray.push(this.props.addlresults)
-        resultsArray.push(this.props.thirdresults)
-        resultsArray.push(this.props.fourthresults)
+    let cards, resultsArray;
+    
+      if (!!this.props.results && !!this.props.addlresults && !!this.props.thirdresults && !!this.props.fourthresults) {
+
+        resultsArray = [this.props.results, this.props.addlresults, this.props.thirdresults, this.props.fourthresults ]
+
         cards = resultsArray.map((result, i) =>
-          <BruriahCard result={result} />)
+          <BruriahCard result={result} key={i} />)
       }
           else {
             cards = "Loading..."
