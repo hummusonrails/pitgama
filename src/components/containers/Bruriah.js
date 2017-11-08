@@ -15,12 +15,15 @@ class Bruriah extends React.Component {
 
   render() {
 
-    let cards, resultsArray;
+    let cards, resultsArray = [];
 
       // if (!!this.props.results && !!this.props.addlresults && !!this.props.thirdresults && !!this.props.fourthresults) {
       if (!!this.props.results) {
 
-        resultsArray = [this.props.results]
+        for (let i = 0; i < this.props.results.length; i++) {
+          // resultsArray << this.props.results[i]
+          console.log(this.props.results[i])
+        }
         // resultsArray = [this.props.results, this.props.addlresults, this.props.thirdresults, this.props.fourthresults ]
 
         cards = resultsArray.map((result, i) =>
