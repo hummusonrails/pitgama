@@ -15,7 +15,8 @@ function ApiReducer(state = initialState, action) {
         //         results: action.data
         //       })
         case 'GET_RESULTS':
-          return {...state.results, ...action.data }
+          return {...state,
+            results: [...state.results, action.data] }
         case 'SECOND_TEXT':
           return Object.assign({}, state, {
             addlresults: action.data
