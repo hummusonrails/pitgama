@@ -1,30 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bruriahSearch, bruriahSearch2, bruriahSearch3, bruriahSearch4 } from '../../actions/api/ApiActions';
+import { textSearch } from '../../actions/api/ApiActions';
 import {Doughnut} from 'react-chartjs-2';
 import BruriahCard from '../BruriahCard';
 
 class Bruriah extends React.Component {
 
   componentDidMount() {
-    this.props.bruriahSearch("Eruvin.53b");
-    this.props.bruriahSearch("Pesachim.62b");
-    this.props.bruriahSearch("Berakhot.10a");
-    this.props.bruriahSearch("Avodah_Zarah.18b");
+    this.props.textSearch("Eruvin.53b");
+    this.props.textSearch("Pesachim.62b");
+    this.props.textSearch("Berakhot.10a");
+    this.props.textSearch("Avodah_Zarah.18b");
   }
 
   render() {
 
     let cards, resultsArray = [];
 
-      // if (!!this.props.results && !!this.props.addlresults && !!this.props.thirdresults && !!this.props.fourthresults) {
       if (!!this.props.results) {
 
         for (let i = 0; i < this.props.results.length; i++) {
-          // resultsArray << this.props.results[i]
-          console.log(this.props.results[i])
+          resultsArray = [...resultsArray, this.props.results[i]]
         }
-        // resultsArray = [this.props.results, this.props.addlresults, this.props.thirdresults, this.props.fourthresults ]
 
         cards = resultsArray.map((result, i) =>
           <BruriahCard result={result} key={i} />)
@@ -84,12 +81,7 @@ class Bruriah extends React.Component {
 const mapStateToProps = (state) => {
   return ({
     results: state.results
-    // addlresults: state.addlresults,
-    // thirdresults: state.thirdresults,
-    // fourthresults: state.fourthresults
   })
 }
 
-export default connect(mapStateToProps, { bruriahSearch })(Bruriah);
-
-// export default connect(mapStateToProps, { bruriahSearch, bruriahSearch2, bruriahSearch3, bruriahSearch4 })(Bruriah);
+export default connect(mapStateToProps, { textSearch })(Bruriah);
