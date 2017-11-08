@@ -1,22 +1,29 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { pitgamaSearch } from '../../actions/api/ApiActions';
+import { textSearch } from '../../actions/api/ApiActions';
 import PitgamaCard from '../PitgamaCard';
 
 class Pitgama extends React.Component {
 
   componentDidMount() {
-    this.props.pitgamaSearch();
+    this.props.textSearch("Aramaic_Targum_to_Song_of_Songs.2.5");
   }
 
   render() {
+    let cards, resultsArray = [];
 
-    let cards = "Loading..."
-      if (this.props.results) {
-        let resultsArray = [this.props.results]
-        cards = resultsArray.map((result, i) =>
-          <PitgamaCard result={result} key={i} />)
+    if (!!this.props.results) {
+
+      for (let i = 0; i < this.props.results.length; i++) {
+        resultsArray = [...resultsArray, this.props.results[i]]
       }
+
+      cards = resultsArray.map((result, i) =>
+        <PitgamaCard result={result} key={i} />)
+    }
+        else {
+          cards = "Loading..."
+        }
 
     return (
       <div className="about-page">
@@ -52,4 +59,4 @@ const mapStateToProps = (state) => {
   })
 }
 
-export default connect(mapStateToProps, { pitgamaSearch })(Pitgama);
+export default connect(mapStateToProps, { textSearch })(Pitgama);

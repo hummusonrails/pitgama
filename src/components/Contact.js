@@ -4,7 +4,6 @@ import {pitgamaTeam} from '../data/pitgamaTeam.js'
 import PitgamaMember from './containers/PitgamaMember'
 
 class Contact extends React.Component {
-  debugger;
   render() {
     return (
       <div>
